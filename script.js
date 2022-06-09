@@ -1,11 +1,14 @@
+// Cronometro
 let hh = 0;  // variável de contagem para horas
 let mm = 0;  // variável de contagem para minutos
 let ss = 0;  // variável de contagem para segundos
 
-let time = 1000; // 1 segundo equivale a 1000ms
+let time; // 1 segundo equivale a 1000ms
 let cron;
 
 function start() {
+
+    time = parseInt(document.getElementById('cron-speed').value)
 
     cron = setInterval(() => {
         timer();
@@ -46,4 +49,17 @@ function timer() {
 
     return format
 
+}
+
+// Configurações do cronômetro
+function fontColor() {
+    document.getElementById('font-color').addEventListener("input", function() {
+        document.getElementById('counter').style.color = this.value;
+    })
+}
+
+function backgroundColor() {
+    document.getElementById('background-color').addEventListener("input", function() {
+        document.getElementById('counter').style.backgroundColor = this.value;
+    })
 }

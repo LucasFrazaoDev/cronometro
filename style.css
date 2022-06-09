@@ -7,20 +7,38 @@ body {
     background-color: #333;
 }
 
-.max-width {
+.max-width-cron {
     max-width: 500px;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    margin-top: 12%;
+    margin-top: 3%;
     background-color: #FFF;
     box-shadow: 0 0 5px #FFF;
     text-align: center;
 }
 
-h1 {
+.max-width-config {
+    max-width: 500px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10%;
+    background-color: #FFF;
+    box-shadow: 0 0 5px #FFF;
+    text-align: center;
+}
+
+.max-width-cron h1 {
     font-family: 'Times New Roman', Times, serif;
     margin-top: 0.6em;
+    width: fit-content;
+}
+
+.max-width-config h1 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
     width: fit-content;
 }
 
